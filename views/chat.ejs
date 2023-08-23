@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title> GPT Chat </title>
+</head>
+<body>
+<h> GPT Chat</h>
+<form action="/chat" method="post">
+<input type="text" name="userInput" placeholder="Type your message..."/>
+<button type="submit">Send</button>
+</form>
+<div>
+<%if (chatInput !== '') { %>
+<p><%= chatInput %></p>
+<% } %>
+<%if (chatResponse !== '') { %>
+<p><%= chatResponse %></p>
+<% } %>
+</div>
+</body>
+</html>
